@@ -15,3 +15,8 @@ Open ProductFactory and ReviewFactory
     In return portion modify for dummy database
 Open DatabaseSeeder
     Add 2 lins for create product and review
+
+7-Database seeding with faker
+----------------------------
+Make Resource for product
+Make resource ProductResource
