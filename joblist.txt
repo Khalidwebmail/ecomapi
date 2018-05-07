@@ -2,3 +2,8 @@ Lecture-4
 ---------
 Create product model
 Create review model
+
+5-Setup Migration
+-----------------
+Create database
+Setup db connection in .env
