@@ -7,3 +7,4 @@ Create review model
 -----------------
 Create database
 Setup db connection in .env
+Create a new dir db
