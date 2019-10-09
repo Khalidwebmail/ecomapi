@@ -37,7 +37,26 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        /*$this->validate($request[
+			'name' => 'required',
+			'detail' => 'required',
+			'price' => 'required',
+			'stock' => 'required',
+			'discount' => ''
+		]);*/
+		
+		$product = new Product();
+		$product->name = $request->name;
+		$product->detail = $request->detail;
+		$product->price = $request->price;
+		$product->stock = $request->stock;
+		$product->discount = $request->discount;
+		
+		$product->save();
+		
+		return response([
+			'data' => new ProductResource($product)
+		],201);
     }
 
     /**
